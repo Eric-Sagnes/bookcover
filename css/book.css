@@ -1,0 +1,552 @@
+.background{
+  height: 100%;
+  width: 100%;
+  background-color: #0B1015;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.cover_container{
+  height:600px;
+  width: 371px;
+  border: 0px solid black;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #242423;
+  box-shadow:
+    0px 0px 20px 2px #FFEFB2;
+
+}
+
+.circuit{
+  height: 600px;
+  width: 371px;
+  position: absolute;
+  z-index: 1;
+
+}
+
+.top-shape{
+  position: absolute;
+  height: 45px;
+  width: 131px;
+  top: 0px;
+  left: 120px;
+  z-index: 3;
+}
+
+.bottom-shape{
+  position: absolute;
+  height: 68px;
+  width: 150px;
+  bottom: 0px;
+  left: 112px;
+  z-index: 3;
+}
+
+.center-circle{
+  height:320px;
+  width:320px;
+  border-radius:50%;
+  background: #444D92;
+  position: absolute;
+  top: 122px;
+  left: 21px;
+  z-index: 3;
+  /* box-shadow:
+    0px 0px 25px 8px #6467A2; */
+}
+
+.center-circle:hover {
+  cursor: pointer;
+  animation: glow 2s ease-in;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes glow {
+  0% { box-shadow: 0px 0px 0px 0px #6467A2;}
+  100% { box-shadow: 0px 0px 25px 8px #6467A2;}
+}
+
+
+.center-text{
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  left: 46.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #BBA659;
+  font-size: 40px;
+  font-weight: 500;
+  z-index: 4;
+}
+
+.inspiration-text{
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  color: #BBA659;
+  top: 86px;
+  left: 115px;
+  font-size: 7px;
+  font-weight: 500;
+  z-index: 4;
+}
+
+.larger-text{
+  font-size: 8px;
+  font-weight: 700;
+  z-index: 4;
+}
+
+.graphic-text{
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  color: #BBA659;
+  top: 268px;
+  left: 108px;
+  font-size: 10px;
+  font-weight: 500;
+  z-index: 4;
+}
+
+
+.top-text{
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  position: absolute;
+  top: 14px;
+  left: 138px;
+  font-size: 12px;
+  font-weight: 700;
+  z-index: 4;
+}
+
+.bottom-text{
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  position: absolute;
+  bottom: 12px;
+  left: 124px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 15px;
+  font-weight: 700;
+  z-index: 4;
+}
+
+.bottom-text:hover {
+  cursor: pointer;
+  animation: bottom-glow 1.5s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes bottom-glow {
+  0% {color: black}
+  100% {color: #444D92}
+}
+
+.top-text:hover {
+  cursor: pointer;
+  animation: top-glow 1.5s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes top-glow {
+  0% {color: black}
+  100% {color: #444D92}
+}
+
+.added-circle1{
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #BBA659;
+  bottom: 104px;
+  left: -12px;
+  z-index: 3;
+}
+
+.added-circle2{
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: #BBA659;
+  bottom: 108px;
+  right: -4px;
+  z-index: 3;
+}
+
+.current{
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: yellow;
+  z-index: 2;
+  box-shadow:
+    0px 0px 8px 3px #FFEFB2;
+}
+
+.one{
+  left: 57px;
+  bottom: -14px;
+  animation: current1 3s linear infinite;
+}
+
+
+@keyframes current1 {
+  0% { bottom: -14px; left: 57px;}
+  35% {bottom: 67px; left: 57px;}
+  45% {bottom: 82px; left: 42px;}
+  70% {bottom: 133px; left: 42px;}
+  100% {bottom: 180px; left: -5px;}
+
+}
+
+.two{
+  left: 113px;
+  bottom: 54px;
+  animation: current2 3.5s linear infinite;
+}
+
+@keyframes current2 {
+  0% { bottom: 54px; left: 113px;}
+  2% {bottom: 56px; left: 112px;}
+  10% {bottom: 82px; left: 112px;}
+  20% {bottom: 82px; left: 104px;}
+  30% {bottom: 98px; left: 104px;}
+  40% {bottom: 98px; left: 94px;}
+  50% {bottom: 103px; left: 88px;}
+  60% {bottom: 152px; left: 88px;}
+  70% {bottom: 180px; left: 59px;}
+  80% {bottom: 199px; left: 59px;}
+  90% {bottom: 199px; left: 40px;}
+  100% {bottom: 242px; left: -5px;}
+
+}
+
+.three{
+  bottom: 164px;
+  left: 138px;
+  animation: current3 2.5s linear infinite;
+}
+
+@keyframes current3 {
+  0% { bottom: 164px; left: 138px;}
+  16% {bottom: 150px; left: 138px;}
+  33% {bottom: 150px; left: 163px;}
+  49% {bottom: 134px; left: 163px;}
+  66% {bottom: 128px; left: 168px;}
+  84% {bottom: 128px; left: 188px;}
+  100% {bottom: 62px; left: 188px;}
+}
+
+.four{
+  bottom: 62px;
+  left: 214px;
+  animation: current4 3s linear infinite;
+}
+
+@keyframes current4 {
+  0% { bottom: 62px; left: 214px;}
+  7.5% { bottom: 80px; left: 214px;}
+  15% { bottom: 80px; left: 202px;}
+  22.5% { bottom: 92px; left: 202px;}
+  30% { bottom: 92px; left: 214px;}
+  37.5% { bottom: 104px; left: 214px;}
+  45% { bottom: 104px; left: 202px;}
+  52.5% { bottom: 116px; left: 202px;}
+  60% { bottom: 116px; left: 214px;}
+  67.5% { bottom: 129px; left: 214px;}
+  75% { bottom: 129px; left: 202px;}
+  85% { bottom: 144px; left: 202px;}
+  92.5% { bottom: 144px; left: 179px;}
+  100% { bottom: 158px; left: 179px;}
+}
+
+.five{
+  bottom: 175px;
+  left: 249px;
+  animation: current5 2s linear infinite;
+}
+
+@keyframes current5 {
+  0% { bottom: 175px; left: 249px;}
+  60% { bottom: 82px; left: 249px;}
+  70% { bottom: 82px; left: 260px;}
+  80% { bottom: 76px; left: 260px;}
+  90% { bottom: 76px; left: 249px;}
+  100% { bottom: 62px; left: 249px;}
+}
+
+.six{
+  bottom: 204px;
+  left: 289px;
+  animation: current6 3.5s linear infinite;
+}
+
+@keyframes current6 {
+  0% { bottom: 204px; left: 289px;}
+  7.5% { bottom: 190px; left: 303px;}
+  40% { bottom: 100px; left: 304px;}
+  45% { bottom: 89px; left: 314px;}
+  55% { bottom: 39px; left: 314px;}
+  60% { bottom: 39px; left: 304px;}
+  65% { bottom: 33px; left: 304px;}
+  70% { bottom: 33px; left: 314px;}
+  80% { bottom: 11px; left: 314px;}
+  85% { bottom: 11px; left: 302px;}
+  90% { bottom: 3px; left: 302px;}
+  95% { bottom: 3px; left: 314px;}
+  100% { bottom: -6px; left: 314px;}
+}
+
+.seven{
+  bottom: -50px;
+  left: 351px;
+  animation: current7 2.25s linear infinite;
+}
+
+@keyframes current7 {
+  0% { bottom: -50px; left: 351px;}
+  75% { bottom: 48px; left: 351px;}
+  100% { bottom: 68px; left: 371px;}
+}
+
+.eight{
+  bottom: 213px;
+  left: -5px;
+  animation: current8 4s linear infinite;
+}
+
+@keyframes current8 {
+  0% { bottom: 213; left: -5px;}
+  35% { bottom: 141px; left: 67px;}
+  55% { bottom: 90px; left: 67px;}
+  72.5% { bottom: 75px; left: 82px;}
+  100% { bottom: -5px; left: 82px;}
+}
+
+.nine {
+  bottom: 182px;
+  left: 371px;
+  animation: current9 3.25s linear infinite;
+}
+
+@keyframes current9 {
+  0% { bottom: 182px; left: 371px;}
+  75% { bottom: 237px; left: 315px;}
+  100% { bottom: 307px; left: 245px;}
+}
+
+.ten{
+  bottom: 340px;
+  left: 23px;
+  animation: current10 4.5s linear infinite;
+}
+
+@keyframes current10 {
+  0% { bottom: 340px; left: 23px;}
+  3% { bottom: 340px; left: 18px;}
+  15% { bottom: 374px; left: 18px;}
+  19% { bottom: 374px; left: 29px;}
+  21% { bottom: 380px; left: 29px;}
+  25% { bottom: 380px; left: 18px;}
+  35% { bottom: 424px; left: 18px;}
+  38% { bottom: 424px; left: 28px;}
+  40% { bottom: 430px; left: 28px;}
+  43% { bottom: 430px; left: 18px;}
+  55% { bottom: 476px; left: 18px;}
+  59% { bottom: 486px; left: 27px;}
+  68% { bottom: 486px; left: 62px;}
+  70% { bottom: 489px; left: 66px;}
+  90% { bottom: 489px; left: 121px;}
+  97% { bottom: 475px; left: 134px;}
+  100% { bottom: 466px; left: 134px;}
+}
+
+.eleven{
+  bottom: 401px;
+  left: 46px;
+  height: 4px;
+  width: 4px;
+  animation: current11 4.75s linear infinite;
+}
+
+@keyframes current11 {
+  0% { bottom: 401px; left: 46px;}
+  20% { bottom: 448px; left: 46px;}
+  24% { bottom: 448px; left: 37px;}
+  26% { bottom: 452px; left: 37px;}
+  36% { bottom: 452px; left: 60px;}
+  41% { bottom: 467px; left: 60px;}
+  51% { bottom: 467px; left: 37px;}
+  53.5% { bottom: 470px; left: 37px;}
+  85% { bottom: 470px; left: 115px;}
+  87% { bottom: 467px; left: 118px;}
+  100% { bottom: 440px; left: 118px;}
+}
+
+.twelve{
+  bottom: 458px;
+  left: 110px;
+  height: 4px;
+  width: 4px;
+  animation: current12 3s linear infinite;
+}
+
+@keyframes current12 {
+  0% { bottom: 458px; left: 110px;}
+  20% { bottom: 458px; left: 95px;}
+  23% { bottom: 460px; left: 93px;}
+  35% { bottom: 460px; left: 81px;}
+  65% { bottom: 437px; left: 58px;}
+  100% { bottom: 390px; left: 58px;}
+}
+
+.thirteen{
+  bottom: 600px;
+  left: 19px;
+  animation: current13 7s linear infinite;
+}
+
+@keyframes current13 {
+  0% { bottom: 600px; left: 19px;}
+  4% { bottom: 585px; left: 19px;}
+  8% { bottom: 585px; left: 31px;}
+  12% { bottom: 571px; left: 31px;}
+  16% { bottom: 571px; left: 19px;}
+  26% { bottom: 523px; left: 19px;}
+  28% { bottom: 519px; left: 23px;}
+  36% { bottom: 519px; left: 61px;}
+  38% { bottom: 517px; left: 63px;}
+  48% { bottom: 517px; left: 127px;}
+  52% { bottom: 510px; left: 120px;}
+  64% { bottom: 510px; left: 59px;}
+  66% { bottom: 512px; left: 57px;}
+  71% { bottom: 512px; left: 20px;}
+  74% { bottom: 529px; left: 4px;}
+  75% { bottom: 533px; left: 4px;}
+  77% { bottom: 533px; left: 8px;}
+  78% { bottom: 539px; left: 8px;}
+  80% { bottom: 539px; left: 4px;}
+  81% { bottom: 544px; left: 4px;}
+  83% { bottom: 544px; left: 8px;}
+  84% { bottom: 549px; left: 8px;}
+  86% { bottom: 549px; left: 4px;}
+  87% { bottom: 554px; left: 4px;}
+  89% { bottom: 554px; left: 8px;}
+  90% { bottom: 560px; left: 8px;}
+  91% { bottom: 560px; left: 4px;}
+  95% { bottom: 576px; left: 4px;}
+  96% { bottom: 576px; left: 8px;}
+  100% { bottom: 600px; left: 8px;}
+}
+
+.fourteen{
+  bottom: 561px;
+  left: 131px;
+  animation: current14 3s linear infinite;
+}
+
+@keyframes current14 {
+  0% { bottom: 561px; left: 131px;}
+  30% { bottom: 543px; left: 111px;}
+  60% { bottom: 543px; left: 80px;}
+  70% { bottom: 564px; left: 59px;}
+  100% { bottom: 640px; left: 59px;}
+}
+
+.fifteen{
+  bottom: 473px;
+  left: 175px;
+  animation: current15 2.75s linear infinite;
+}
+
+@keyframes current15 {
+  0% { bottom: 473px; left: 175px;}
+  20% { bottom: 492px; left: 175px;}
+  35% { bottom: 503px; left: 164px;}
+  55% { bottom: 514px; left: 175px;}
+  75% { bottom: 532px; left: 175px;}
+  80% { bottom: 540px; left: 166px;}
+  100% { bottom: 600px; left: 166px;}
+}
+
+.sixteen{
+  bottom: 556px;
+  left: 219px;
+  animation: current16 2.25s linear infinite;
+}
+
+@keyframes current16 {
+  0% { bottom: 556px; left: 219px;}
+  20% { bottom: 542px; left: 219px;}
+  40% { bottom: 536px; left: 225px;}
+  100% { bottom: 440px; left: 225px;}
+}
+
+.seventeen{
+  bottom: 284px;
+  left: 332px;
+  animation: current17 4s linear infinite;
+}
+
+@keyframes current17 {
+  0% { bottom: 284px; left: 332px;}
+  5% { bottom: 294px; left: 343px;}
+  25% { bottom: 389px; left: 343px;}
+  50% { bottom: 436px; left: 295px;}
+  65% { bottom: 488px; left: 295px;}
+  67% { bottom: 490px; left: 298px;}
+  76% { bottom: 516px; left: 298px;}
+  78% { bottom: 520px; left: 295px;}
+  90% { bottom: 572px; left: 295px;}
+  100% { bottom: 600px; left: 324px;}
+}
+
+.eighteen{
+  bottom: 549px;
+  left: 371px;
+  height: 4px;
+  width: 4px;
+  animation: current18 3s linear infinite;
+}
+
+@keyframes current18 {
+  0% { bottom: 549px; left: 371px;}
+  5% { bottom: 543px; left: 366px;}
+  15% { bottom: 543px; left: 357px;}
+  30% { bottom: 529px; left: 343px;}
+  45% { bottom: 509px; left: 343px;}
+  47% { bottom: 508px; left: 342px;}
+  54% { bottom: 499px; left: 342px;}
+  56% { bottom: 498px; left: 343px;}
+  72% { bottom: 479px; left: 343px;}
+  82% { bottom: 464px; left: 358px;}
+  100% { bottom: 464px; left: 400px;}
+}
+
+.nineteen{
+  bottom: 600px;
+  left: 264px;
+  animation: current19 3s linear infinite;
+}
+
+@keyframes current19 {
+  0% { bottom: 600px; left: 264px;}
+  40% { bottom: 541px; left: 263px;}
+  45% { bottom: 534px; left: 271px;}
+  70% { bottom: 474px; left: 270px;}
+  73% { bottom: 468px; left: 263px;}
+  100% { bottom: 415px; left: 263px;}
+}
